@@ -7,15 +7,21 @@ import javax.persistence.*;
 public class Port {
 
     @Id
-    @Column(name="id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "port")
     private int port;
 
+    @Column(name = "port_state")
+    private String portState;
+
     @Column(name = "service_name")
     private String serviceName;
+
+    @Column(name = "service_product")
+    private String serviceProduct;
 
     @ManyToOne
     @JoinColumn(name = "scan_id")
@@ -51,5 +57,21 @@ public class Port {
 
     public void setScan(Scan scan) {
         this.scan = scan;
+    }
+
+    public String getPortState() {
+        return portState;
+    }
+
+    public void setPortState(String portState) {
+        this.portState = portState;
+    }
+
+    public String getServiceProduct() {
+        return serviceProduct;
+    }
+
+    public void setServiceProduct(String serviceProduct) {
+        this.serviceProduct = serviceProduct;
     }
 }

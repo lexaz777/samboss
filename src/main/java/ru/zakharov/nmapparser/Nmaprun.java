@@ -6,7 +6,7 @@
 //
 
 
-package ru.zakharov.nmapparser.xjc;
+package ru.zakharov.nmapparser;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -25,9 +25,9 @@ import javax.xml.bind.annotation.XmlValue;
 
 /**
  * <p>Java class for anonymous complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType>
  *   &lt;complexContent>
@@ -143,7 +143,7 @@ import javax.xml.bind.annotation.XmlValue;
  *                                       &lt;/element>
  *                                     &lt;/sequence>
  *                                     &lt;attribute name="protocol" type="{http://www.w3.org/2001/XMLSchema}string" />
- *                                     &lt;attribute name="portid" type="{http://www.w3.org/2001/XMLSchema}short" />
+ *                                     &lt;attribute name="portId" type="{http://www.w3.org/2001/XMLSchema}short" />
  *                                   &lt;/restriction>
  *                                 &lt;/complexContent>
  *                               &lt;/complexType>
@@ -205,16 +205,14 @@ import javax.xml.bind.annotation.XmlValue;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "scaninfo",
-    "verbose",
-    "debugging",
-    "host",
-    "runstats"
+        "scaninfo",
+        "verbose",
+        "debugging",
+        "host",
+        "runstats"
 })
 @XmlRootElement(name = "nmaprun")
 public class Nmaprun {
@@ -243,11 +241,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the scaninfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Nmaprun.Scaninfo }
-     *     
+     *
+     * @return possible object is
+     * {@link Nmaprun.Scaninfo }
      */
     public Nmaprun.Scaninfo getScaninfo() {
         return scaninfo;
@@ -255,11 +251,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the scaninfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Nmaprun.Scaninfo }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Nmaprun.Scaninfo }
      */
     public void setScaninfo(Nmaprun.Scaninfo value) {
         this.scaninfo = value;
@@ -267,11 +261,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the verbose property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Nmaprun.Verbose }
-     *     
+     *
+     * @return possible object is
+     * {@link Nmaprun.Verbose }
      */
     public Nmaprun.Verbose getVerbose() {
         return verbose;
@@ -279,11 +271,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the verbose property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Nmaprun.Verbose }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Nmaprun.Verbose }
      */
     public void setVerbose(Nmaprun.Verbose value) {
         this.verbose = value;
@@ -291,11 +281,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the debugging property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Nmaprun.Debugging }
-     *     
+     *
+     * @return possible object is
+     * {@link Nmaprun.Debugging }
      */
     public Nmaprun.Debugging getDebugging() {
         return debugging;
@@ -303,11 +291,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the debugging property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Nmaprun.Debugging }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Nmaprun.Debugging }
      */
     public void setDebugging(Nmaprun.Debugging value) {
         this.debugging = value;
@@ -315,25 +301,23 @@ public class Nmaprun {
 
     /**
      * Gets the value of the host property.
-     * 
+     *
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the host property.
-     * 
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getHost().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Nmaprun.Host }
-     * 
-     * 
      */
     public List<Nmaprun.Host> getHost() {
         if (host == null) {
@@ -344,11 +328,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the runstats property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Nmaprun.Runstats }
-     *     
+     *
+     * @return possible object is
+     * {@link Nmaprun.Runstats }
      */
     public Nmaprun.Runstats getRunstats() {
         return runstats;
@@ -356,11 +338,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the runstats property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Nmaprun.Runstats }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Nmaprun.Runstats }
      */
     public void setRunstats(Nmaprun.Runstats value) {
         this.runstats = value;
@@ -368,11 +348,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the scanner property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getScanner() {
         return scanner;
@@ -380,11 +358,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the scanner property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setScanner(String value) {
         this.scanner = value;
@@ -392,11 +368,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the args property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getArgs() {
         return args;
@@ -404,11 +378,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the args property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setArgs(String value) {
         this.args = value;
@@ -416,11 +388,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the start property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getStart() {
         return start;
@@ -428,11 +398,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the start property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setStart(Integer value) {
         this.start = value;
@@ -440,11 +408,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the startstr property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getStartstr() {
         return startstr;
@@ -452,11 +418,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the startstr property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setStartstr(String value) {
         this.startstr = value;
@@ -464,11 +428,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the version property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Float }
-     *     
+     *
+     * @return possible object is
+     * {@link Float }
      */
     public Float getVersion() {
         return version;
@@ -476,11 +438,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the version property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Float }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Float }
      */
     public void setVersion(Float value) {
         this.version = value;
@@ -488,11 +448,9 @@ public class Nmaprun {
 
     /**
      * Gets the value of the xmloutputversion property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Float }
-     *     
+     *
+     * @return possible object is
+     * {@link Float }
      */
     public Float getXmloutputversion() {
         return xmloutputversion;
@@ -500,11 +458,9 @@ public class Nmaprun {
 
     /**
      * Sets the value of the xmloutputversion property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Float }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Float }
      */
     public void setXmloutputversion(Float value) {
         this.xmloutputversion = value;
@@ -513,9 +469,9 @@ public class Nmaprun {
 
     /**
      * <p>Java class for anonymous complex type.
-     * 
+     *
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
+     *
      * <pre>
      * &lt;complexType>
      *   &lt;simpleContent>
@@ -525,12 +481,10 @@ public class Nmaprun {
      *   &lt;/simpleContent>
      * &lt;/complexType>
      * </pre>
-     * 
-     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "value"
+            "value"
     })
     public static class Debugging {
 
@@ -541,11 +495,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the value property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         *
+         * @return possible object is
+         * {@link String }
          */
         public String getValue() {
             return value;
@@ -553,11 +505,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the value property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link String }
          */
         public void setValue(String value) {
             this.value = value;
@@ -565,11 +515,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the level property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Byte }
-         *     
+         *
+         * @return possible object is
+         * {@link Byte }
          */
         public Byte getLevel() {
             return level;
@@ -577,11 +525,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the level property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Byte }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Byte }
          */
         public void setLevel(Byte value) {
             this.level = value;
@@ -592,9 +538,9 @@ public class Nmaprun {
 
     /**
      * <p>Java class for anonymous complex type.
-     * 
+     *
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
+     *
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
@@ -675,7 +621,7 @@ public class Nmaprun {
      *                             &lt;/element>
      *                           &lt;/sequence>
      *                           &lt;attribute name="protocol" type="{http://www.w3.org/2001/XMLSchema}string" />
-     *                           &lt;attribute name="portid" type="{http://www.w3.org/2001/XMLSchema}short" />
+     *                           &lt;attribute name="portId" type="{http://www.w3.org/2001/XMLSchema}short" />
      *                         &lt;/restriction>
      *                       &lt;/complexContent>
      *                     &lt;/complexType>
@@ -692,15 +638,13 @@ public class Nmaprun {
      *   &lt;/complexContent>
      * &lt;/complexType>
      * </pre>
-     * 
-     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "status",
-        "address",
-        "hostnames",
-        "ports"
+            "status",
+            "address",
+            "hostnames",
+            "ports"
     })
     public static class Host {
 
@@ -719,11 +663,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the status property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Nmaprun.Host.Status }
-         *     
+         *
+         * @return possible object is
+         * {@link Nmaprun.Host.Status }
          */
         public Nmaprun.Host.Status getStatus() {
             return status;
@@ -731,11 +673,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the status property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Nmaprun.Host.Status }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Nmaprun.Host.Status }
          */
         public void setStatus(Nmaprun.Host.Status value) {
             this.status = value;
@@ -743,11 +683,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the address property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Nmaprun.Host.Address }
-         *     
+         *
+         * @return possible object is
+         * {@link Nmaprun.Host.Address }
          */
         public Nmaprun.Host.Address getAddress() {
             return address;
@@ -755,11 +693,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the address property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Nmaprun.Host.Address }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Nmaprun.Host.Address }
          */
         public void setAddress(Nmaprun.Host.Address value) {
             this.address = value;
@@ -767,11 +703,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the hostnames property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Nmaprun.Host.Hostnames }
-         *     
+         *
+         * @return possible object is
+         * {@link Nmaprun.Host.Hostnames }
          */
         public Nmaprun.Host.Hostnames getHostnames() {
             return hostnames;
@@ -779,11 +713,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the hostnames property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Nmaprun.Host.Hostnames }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Nmaprun.Host.Hostnames }
          */
         public void setHostnames(Nmaprun.Host.Hostnames value) {
             this.hostnames = value;
@@ -791,11 +723,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the ports property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Nmaprun.Host.Ports }
-         *     
+         *
+         * @return possible object is
+         * {@link Nmaprun.Host.Ports }
          */
         public Nmaprun.Host.Ports getPorts() {
             return ports;
@@ -803,11 +733,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the ports property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Nmaprun.Host.Ports }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Nmaprun.Host.Ports }
          */
         public void setPorts(Nmaprun.Host.Ports value) {
             this.ports = value;
@@ -815,11 +743,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the starttime property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Byte }
-         *     
+         *
+         * @return possible object is
+         * {@link Byte }
          */
         public Byte getStarttime() {
             return starttime;
@@ -827,11 +753,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the starttime property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Byte }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Byte }
          */
         public void setStarttime(Byte value) {
             this.starttime = value;
@@ -839,11 +763,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the endtime property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Byte }
-         *     
+         *
+         * @return possible object is
+         * {@link Byte }
          */
         public Byte getEndtime() {
             return endtime;
@@ -851,11 +773,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the endtime property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Byte }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Byte }
          */
         public void setEndtime(Byte value) {
             this.endtime = value;
@@ -864,9 +784,9 @@ public class Nmaprun {
 
         /**
          * <p>Java class for anonymous complex type.
-         * 
+         *
          * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
+         *
          * <pre>
          * &lt;complexType>
          *   &lt;simpleContent>
@@ -877,12 +797,10 @@ public class Nmaprun {
          *   &lt;/simpleContent>
          * &lt;/complexType>
          * </pre>
-         * 
-         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
-            "value"
+                "value"
         })
         public static class Address {
 
@@ -895,11 +813,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the value property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getValue() {
                 return value;
@@ -907,11 +823,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the value property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setValue(String value) {
                 this.value = value;
@@ -919,11 +833,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the addr property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getAddr() {
                 return addr;
@@ -931,11 +843,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the addr property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setAddr(String value) {
                 this.addr = value;
@@ -943,11 +853,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the addrtype property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getAddrtype() {
                 return addrtype;
@@ -955,11 +863,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the addrtype property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setAddrtype(String value) {
                 this.addrtype = value;
@@ -970,9 +876,9 @@ public class Nmaprun {
 
         /**
          * <p>Java class for anonymous complex type.
-         * 
+         *
          * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
+         *
          * <pre>
          * &lt;complexType>
          *   &lt;complexContent>
@@ -993,12 +899,10 @@ public class Nmaprun {
          *   &lt;/complexContent>
          * &lt;/complexType>
          * </pre>
-         * 
-         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
-            "content"
+                "content"
         })
         public static class Hostnames {
 
@@ -1008,26 +912,24 @@ public class Nmaprun {
 
             /**
              * Gets the value of the content property.
-             * 
+             *
              * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
              * This is why there is not a <CODE>set</CODE> method for the content property.
-             * 
+             *
              * <p>
              * For example, to add a new item, do as follows:
              * <pre>
              *    getContent().add(newItem);
              * </pre>
-             * 
-             * 
+             *
+             *
              * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link String }
              * {@link JAXBElement }{@code <}{@link Nmaprun.Host.Hostnames.Hostname }{@code >}
-             * 
-             * 
              */
             public List<Serializable> getContent() {
                 if (content == null) {
@@ -1039,9 +941,9 @@ public class Nmaprun {
 
             /**
              * <p>Java class for anonymous complex type.
-             * 
+             *
              * <p>The following schema fragment specifies the expected content contained within this class.
-             * 
+             *
              * <pre>
              * &lt;complexType>
              *   &lt;simpleContent>
@@ -1052,12 +954,10 @@ public class Nmaprun {
              *   &lt;/simpleContent>
              * &lt;/complexType>
              * </pre>
-             * 
-             * 
              */
             @XmlAccessorType(XmlAccessType.FIELD)
             @XmlType(name = "", propOrder = {
-                "value"
+                    "value"
             })
             public static class Hostname {
 
@@ -1070,11 +970,9 @@ public class Nmaprun {
 
                 /**
                  * Gets the value of the value property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link String }
-                 *     
+                 *
+                 * @return possible object is
+                 * {@link String }
                  */
                 public String getValue() {
                     return value;
@@ -1082,11 +980,9 @@ public class Nmaprun {
 
                 /**
                  * Sets the value of the value property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link String }
-                 *     
+                 *
+                 * @param value allowed object is
+                 *              {@link String }
                  */
                 public void setValue(String value) {
                     this.value = value;
@@ -1094,11 +990,9 @@ public class Nmaprun {
 
                 /**
                  * Gets the value of the name property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link String }
-                 *     
+                 *
+                 * @return possible object is
+                 * {@link String }
                  */
                 public String getName() {
                     return name;
@@ -1106,11 +1000,9 @@ public class Nmaprun {
 
                 /**
                  * Sets the value of the name property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link String }
-                 *     
+                 *
+                 * @param value allowed object is
+                 *              {@link String }
                  */
                 public void setName(String value) {
                     this.name = value;
@@ -1118,11 +1010,9 @@ public class Nmaprun {
 
                 /**
                  * Gets the value of the type property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link String }
-                 *     
+                 *
+                 * @return possible object is
+                 * {@link String }
                  */
                 public String getType() {
                     return type;
@@ -1130,11 +1020,9 @@ public class Nmaprun {
 
                 /**
                  * Sets the value of the type property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link String }
-                 *     
+                 *
+                 * @param value allowed object is
+                 *              {@link String }
                  */
                 public void setType(String value) {
                     this.type = value;
@@ -1147,9 +1035,9 @@ public class Nmaprun {
 
         /**
          * <p>Java class for anonymous complex type.
-         * 
+         *
          * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
+         *
          * <pre>
          * &lt;complexType>
          *   &lt;complexContent>
@@ -1184,7 +1072,7 @@ public class Nmaprun {
          *                   &lt;/element>
          *                 &lt;/sequence>
          *                 &lt;attribute name="protocol" type="{http://www.w3.org/2001/XMLSchema}string" />
-         *                 &lt;attribute name="portid" type="{http://www.w3.org/2001/XMLSchema}short" />
+         *                 &lt;attribute name="portId" type="{http://www.w3.org/2001/XMLSchema}short" />
          *               &lt;/restriction>
          *             &lt;/complexContent>
          *           &lt;/complexType>
@@ -1194,12 +1082,10 @@ public class Nmaprun {
          *   &lt;/complexContent>
          * &lt;/complexType>
          * </pre>
-         * 
-         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
-            "port"
+                "port"
         })
         public static class Ports {
 
@@ -1207,25 +1093,23 @@ public class Nmaprun {
 
             /**
              * Gets the value of the port property.
-             * 
+             *
              * <p>
              * This accessor method returns a reference to the live list,
              * not a snapshot. Therefore any modification you make to the
              * returned list will be present inside the JAXB object.
              * This is why there is not a <CODE>set</CODE> method for the port property.
-             * 
+             *
              * <p>
              * For example, to add a new item, do as follows:
              * <pre>
              *    getPort().add(newItem);
              * </pre>
-             * 
-             * 
+             *
+             *
              * <p>
              * Objects of the following type(s) are allowed in the list
              * {@link Nmaprun.Host.Ports.Port }
-             * 
-             * 
              */
             public List<Nmaprun.Host.Ports.Port> getPort() {
                 if (port == null) {
@@ -1237,9 +1121,9 @@ public class Nmaprun {
 
             /**
              * <p>Java class for anonymous complex type.
-             * 
+             *
              * <p>The following schema fragment specifies the expected content contained within this class.
-             * 
+             *
              * <pre>
              * &lt;complexType>
              *   &lt;complexContent>
@@ -1269,18 +1153,16 @@ public class Nmaprun {
              *         &lt;/element>
              *       &lt;/sequence>
              *       &lt;attribute name="protocol" type="{http://www.w3.org/2001/XMLSchema}string" />
-             *       &lt;attribute name="portid" type="{http://www.w3.org/2001/XMLSchema}short" />
+             *       &lt;attribute name="portId" type="{http://www.w3.org/2001/XMLSchema}short" />
              *     &lt;/restriction>
              *   &lt;/complexContent>
              * &lt;/complexType>
              * </pre>
-             * 
-             * 
              */
             @XmlAccessorType(XmlAccessType.FIELD)
             @XmlType(name = "", propOrder = {
-                "state",
-                "service"
+                    "state",
+                    "service"
             })
             public static class Port {
 
@@ -1290,16 +1172,14 @@ public class Nmaprun {
                 protected Nmaprun.Host.Ports.Port.Service service;
                 @XmlAttribute(name = "protocol")
                 protected String protocol;
-                @XmlAttribute(name = "portid")
+                @XmlAttribute(name = "portId")
                 protected Short portid;
 
                 /**
                  * Gets the value of the state property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link Nmaprun.Host.Ports.Port.State }
-                 *     
+                 *
+                 * @return possible object is
+                 * {@link Nmaprun.Host.Ports.Port.State }
                  */
                 public Nmaprun.Host.Ports.Port.State getState() {
                     return state;
@@ -1307,11 +1187,9 @@ public class Nmaprun {
 
                 /**
                  * Sets the value of the state property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link Nmaprun.Host.Ports.Port.State }
-                 *     
+                 *
+                 * @param value allowed object is
+                 *              {@link Nmaprun.Host.Ports.Port.State }
                  */
                 public void setState(Nmaprun.Host.Ports.Port.State value) {
                     this.state = value;
@@ -1319,11 +1197,9 @@ public class Nmaprun {
 
                 /**
                  * Gets the value of the service property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link Nmaprun.Host.Ports.Port.Service }
-                 *     
+                 *
+                 * @return possible object is
+                 * {@link Nmaprun.Host.Ports.Port.Service }
                  */
                 public Nmaprun.Host.Ports.Port.Service getService() {
                     return service;
@@ -1331,11 +1207,9 @@ public class Nmaprun {
 
                 /**
                  * Sets the value of the service property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link Nmaprun.Host.Ports.Port.Service }
-                 *     
+                 *
+                 * @param value allowed object is
+                 *              {@link Nmaprun.Host.Ports.Port.Service }
                  */
                 public void setService(Nmaprun.Host.Ports.Port.Service value) {
                     this.service = value;
@@ -1343,11 +1217,9 @@ public class Nmaprun {
 
                 /**
                  * Gets the value of the protocol property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link String }
-                 *     
+                 *
+                 * @return possible object is
+                 * {@link String }
                  */
                 public String getProtocol() {
                     return protocol;
@@ -1355,35 +1227,29 @@ public class Nmaprun {
 
                 /**
                  * Sets the value of the protocol property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link String }
-                 *     
+                 *
+                 * @param value allowed object is
+                 *              {@link String }
                  */
                 public void setProtocol(String value) {
                     this.protocol = value;
                 }
 
                 /**
-                 * Gets the value of the portid property.
-                 * 
-                 * @return
-                 *     possible object is
-                 *     {@link Short }
-                 *     
+                 * Gets the value of the portId property.
+                 *
+                 * @return possible object is
+                 * {@link Short }
                  */
                 public Short getPortid() {
                     return portid;
                 }
 
                 /**
-                 * Sets the value of the portid property.
-                 * 
-                 * @param value
-                 *     allowed object is
-                 *     {@link Short }
-                 *     
+                 * Sets the value of the portId property.
+                 *
+                 * @param value allowed object is
+                 *              {@link Short }
                  */
                 public void setPortid(Short value) {
                     this.portid = value;
@@ -1392,9 +1258,9 @@ public class Nmaprun {
 
                 /**
                  * <p>Java class for anonymous complex type.
-                 * 
+                 *
                  * <p>The following schema fragment specifies the expected content contained within this class.
-                 * 
+                 *
                  * <pre>
                  * &lt;complexType>
                  *   &lt;simpleContent>
@@ -1406,12 +1272,10 @@ public class Nmaprun {
                  *   &lt;/simpleContent>
                  * &lt;/complexType>
                  * </pre>
-                 * 
-                 * 
                  */
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "", propOrder = {
-                    "value"
+                        "value"
                 })
                 public static class Service {
 
@@ -1426,11 +1290,9 @@ public class Nmaprun {
 
                     /**
                      * Gets the value of the value property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @return possible object is
+                     * {@link String }
                      */
                     public String getValue() {
                         return value;
@@ -1438,11 +1300,9 @@ public class Nmaprun {
 
                     /**
                      * Sets the value of the value property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @param value allowed object is
+                     *              {@link String }
                      */
                     public void setValue(String value) {
                         this.value = value;
@@ -1450,11 +1310,9 @@ public class Nmaprun {
 
                     /**
                      * Gets the value of the name property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @return possible object is
+                     * {@link String }
                      */
                     public String getName() {
                         return name;
@@ -1462,11 +1320,9 @@ public class Nmaprun {
 
                     /**
                      * Sets the value of the name property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @param value allowed object is
+                     *              {@link String }
                      */
                     public void setName(String value) {
                         this.name = value;
@@ -1474,11 +1330,9 @@ public class Nmaprun {
 
                     /**
                      * Gets the value of the method property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @return possible object is
+                     * {@link String }
                      */
                     public String getMethod() {
                         return method;
@@ -1486,11 +1340,9 @@ public class Nmaprun {
 
                     /**
                      * Sets the value of the method property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @param value allowed object is
+                     *              {@link String }
                      */
                     public void setMethod(String value) {
                         this.method = value;
@@ -1498,11 +1350,9 @@ public class Nmaprun {
 
                     /**
                      * Gets the value of the conf property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link Byte }
-                     *     
+                     *
+                     * @return possible object is
+                     * {@link Byte }
                      */
                     public Byte getConf() {
                         return conf;
@@ -1510,11 +1360,9 @@ public class Nmaprun {
 
                     /**
                      * Sets the value of the conf property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link Byte }
-                     *     
+                     *
+                     * @param value allowed object is
+                     *              {@link Byte }
                      */
                     public void setConf(Byte value) {
                         this.conf = value;
@@ -1525,9 +1373,9 @@ public class Nmaprun {
 
                 /**
                  * <p>Java class for anonymous complex type.
-                 * 
+                 *
                  * <p>The following schema fragment specifies the expected content contained within this class.
-                 * 
+                 *
                  * <pre>
                  * &lt;complexType>
                  *   &lt;simpleContent>
@@ -1539,12 +1387,10 @@ public class Nmaprun {
                  *   &lt;/simpleContent>
                  * &lt;/complexType>
                  * </pre>
-                 * 
-                 * 
                  */
                 @XmlAccessorType(XmlAccessType.FIELD)
                 @XmlType(name = "", propOrder = {
-                    "value"
+                        "value"
                 })
                 public static class State {
 
@@ -1559,11 +1405,9 @@ public class Nmaprun {
 
                     /**
                      * Gets the value of the value property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @return possible object is
+                     * {@link String }
                      */
                     public String getValue() {
                         return value;
@@ -1571,11 +1415,9 @@ public class Nmaprun {
 
                     /**
                      * Sets the value of the value property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @param value allowed object is
+                     *              {@link String }
                      */
                     public void setValue(String value) {
                         this.value = value;
@@ -1583,11 +1425,9 @@ public class Nmaprun {
 
                     /**
                      * Gets the value of the state property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @return possible object is
+                     * {@link String }
                      */
                     public String getState() {
                         return state;
@@ -1595,11 +1435,9 @@ public class Nmaprun {
 
                     /**
                      * Sets the value of the state property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @param value allowed object is
+                     *              {@link String }
                      */
                     public void setState(String value) {
                         this.state = value;
@@ -1607,11 +1445,9 @@ public class Nmaprun {
 
                     /**
                      * Gets the value of the reason property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @return possible object is
+                     * {@link String }
                      */
                     public String getReason() {
                         return reason;
@@ -1619,11 +1455,9 @@ public class Nmaprun {
 
                     /**
                      * Sets the value of the reason property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link String }
-                     *     
+                     *
+                     * @param value allowed object is
+                     *              {@link String }
                      */
                     public void setReason(String value) {
                         this.reason = value;
@@ -1631,11 +1465,9 @@ public class Nmaprun {
 
                     /**
                      * Gets the value of the reasonTtl property.
-                     * 
-                     * @return
-                     *     possible object is
-                     *     {@link Byte }
-                     *     
+                     *
+                     * @return possible object is
+                     * {@link Byte }
                      */
                     public Byte getReasonTtl() {
                         return reasonTtl;
@@ -1643,11 +1475,9 @@ public class Nmaprun {
 
                     /**
                      * Sets the value of the reasonTtl property.
-                     * 
-                     * @param value
-                     *     allowed object is
-                     *     {@link Byte }
-                     *     
+                     *
+                     * @param value allowed object is
+                     *              {@link Byte }
                      */
                     public void setReasonTtl(Byte value) {
                         this.reasonTtl = value;
@@ -1662,9 +1492,9 @@ public class Nmaprun {
 
         /**
          * <p>Java class for anonymous complex type.
-         * 
+         *
          * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
+         *
          * <pre>
          * &lt;complexType>
          *   &lt;simpleContent>
@@ -1676,12 +1506,10 @@ public class Nmaprun {
          *   &lt;/simpleContent>
          * &lt;/complexType>
          * </pre>
-         * 
-         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
-            "value"
+                "value"
         })
         public static class Status {
 
@@ -1696,11 +1524,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the value property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getValue() {
                 return value;
@@ -1708,11 +1534,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the value property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setValue(String value) {
                 this.value = value;
@@ -1720,11 +1544,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the state property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getState() {
                 return state;
@@ -1732,11 +1554,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the state property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setState(String value) {
                 this.state = value;
@@ -1744,11 +1564,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the reason property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getReason() {
                 return reason;
@@ -1756,11 +1574,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the reason property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setReason(String value) {
                 this.reason = value;
@@ -1768,11 +1584,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the reasonTtl property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link Byte }
-             *     
+             *
+             * @return possible object is
+             * {@link Byte }
              */
             public Byte getReasonTtl() {
                 return reasonTtl;
@@ -1780,11 +1594,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the reasonTtl property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link Byte }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link Byte }
              */
             public void setReasonTtl(Byte value) {
                 this.reasonTtl = value;
@@ -1797,9 +1609,9 @@ public class Nmaprun {
 
     /**
      * <p>Java class for anonymous complex type.
-     * 
+     *
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
+     *
      * <pre>
      * &lt;complexType>
      *   &lt;complexContent>
@@ -1834,13 +1646,11 @@ public class Nmaprun {
      *   &lt;/complexContent>
      * &lt;/complexType>
      * </pre>
-     * 
-     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "finished",
-        "hosts"
+            "finished",
+            "hosts"
     })
     public static class Runstats {
 
@@ -1851,11 +1661,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the finished property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Nmaprun.Runstats.Finished }
-         *     
+         *
+         * @return possible object is
+         * {@link Nmaprun.Runstats.Finished }
          */
         public Nmaprun.Runstats.Finished getFinished() {
             return finished;
@@ -1863,11 +1671,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the finished property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Nmaprun.Runstats.Finished }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Nmaprun.Runstats.Finished }
          */
         public void setFinished(Nmaprun.Runstats.Finished value) {
             this.finished = value;
@@ -1875,11 +1681,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the hosts property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Nmaprun.Runstats.Hosts }
-         *     
+         *
+         * @return possible object is
+         * {@link Nmaprun.Runstats.Hosts }
          */
         public Nmaprun.Runstats.Hosts getHosts() {
             return hosts;
@@ -1887,11 +1691,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the hosts property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Nmaprun.Runstats.Hosts }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Nmaprun.Runstats.Hosts }
          */
         public void setHosts(Nmaprun.Runstats.Hosts value) {
             this.hosts = value;
@@ -1900,9 +1702,9 @@ public class Nmaprun {
 
         /**
          * <p>Java class for anonymous complex type.
-         * 
+         *
          * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
+         *
          * <pre>
          * &lt;complexType>
          *   &lt;simpleContent>
@@ -1916,12 +1718,10 @@ public class Nmaprun {
          *   &lt;/simpleContent>
          * &lt;/complexType>
          * </pre>
-         * 
-         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
-            "value"
+                "value"
         })
         public static class Finished {
 
@@ -1940,11 +1740,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the value property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getValue() {
                 return value;
@@ -1952,11 +1750,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the value property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setValue(String value) {
                 this.value = value;
@@ -1964,11 +1760,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the time property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link Integer }
-             *     
+             *
+             * @return possible object is
+             * {@link Integer }
              */
             public Integer getTime() {
                 return time;
@@ -1976,11 +1770,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the time property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link Integer }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link Integer }
              */
             public void setTime(Integer value) {
                 this.time = value;
@@ -1988,11 +1780,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the timestr property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getTimestr() {
                 return timestr;
@@ -2000,11 +1790,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the timestr property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setTimestr(String value) {
                 this.timestr = value;
@@ -2012,11 +1800,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the elapsed property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link Float }
-             *     
+             *
+             * @return possible object is
+             * {@link Float }
              */
             public Float getElapsed() {
                 return elapsed;
@@ -2024,11 +1810,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the elapsed property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link Float }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link Float }
              */
             public void setElapsed(Float value) {
                 this.elapsed = value;
@@ -2036,11 +1820,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the summary property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getSummary() {
                 return summary;
@@ -2048,11 +1830,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the summary property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setSummary(String value) {
                 this.summary = value;
@@ -2060,11 +1840,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the exit property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getExit() {
                 return exit;
@@ -2072,11 +1850,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the exit property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setExit(String value) {
                 this.exit = value;
@@ -2087,9 +1863,9 @@ public class Nmaprun {
 
         /**
          * <p>Java class for anonymous complex type.
-         * 
+         *
          * <p>The following schema fragment specifies the expected content contained within this class.
-         * 
+         *
          * <pre>
          * &lt;complexType>
          *   &lt;simpleContent>
@@ -2101,12 +1877,10 @@ public class Nmaprun {
          *   &lt;/simpleContent>
          * &lt;/complexType>
          * </pre>
-         * 
-         * 
          */
         @XmlAccessorType(XmlAccessType.FIELD)
         @XmlType(name = "", propOrder = {
-            "value"
+                "value"
         })
         public static class Hosts {
 
@@ -2121,11 +1895,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the value property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link String }
-             *     
+             *
+             * @return possible object is
+             * {@link String }
              */
             public String getValue() {
                 return value;
@@ -2133,11 +1905,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the value property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link String }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link String }
              */
             public void setValue(String value) {
                 this.value = value;
@@ -2145,11 +1915,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the up property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link Byte }
-             *     
+             *
+             * @return possible object is
+             * {@link Byte }
              */
             public Byte getUp() {
                 return up;
@@ -2157,11 +1925,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the up property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link Byte }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link Byte }
              */
             public void setUp(Byte value) {
                 this.up = value;
@@ -2169,11 +1935,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the down property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link Byte }
-             *     
+             *
+             * @return possible object is
+             * {@link Byte }
              */
             public Byte getDown() {
                 return down;
@@ -2181,11 +1945,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the down property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link Byte }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link Byte }
              */
             public void setDown(Byte value) {
                 this.down = value;
@@ -2193,11 +1955,9 @@ public class Nmaprun {
 
             /**
              * Gets the value of the total property.
-             * 
-             * @return
-             *     possible object is
-             *     {@link Byte }
-             *     
+             *
+             * @return possible object is
+             * {@link Byte }
              */
             public Byte getTotal() {
                 return total;
@@ -2205,11 +1965,9 @@ public class Nmaprun {
 
             /**
              * Sets the value of the total property.
-             * 
-             * @param value
-             *     allowed object is
-             *     {@link Byte }
-             *     
+             *
+             * @param value allowed object is
+             *              {@link Byte }
              */
             public void setTotal(Byte value) {
                 this.total = value;
@@ -2222,9 +1980,9 @@ public class Nmaprun {
 
     /**
      * <p>Java class for anonymous complex type.
-     * 
+     *
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
+     *
      * <pre>
      * &lt;complexType>
      *   &lt;simpleContent>
@@ -2237,12 +1995,10 @@ public class Nmaprun {
      *   &lt;/simpleContent>
      * &lt;/complexType>
      * </pre>
-     * 
-     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "value"
+            "value"
     })
     public static class Scaninfo {
 
@@ -2259,11 +2015,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the value property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         *
+         * @return possible object is
+         * {@link String }
          */
         public String getValue() {
             return value;
@@ -2271,11 +2025,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the value property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link String }
          */
         public void setValue(String value) {
             this.value = value;
@@ -2283,11 +2035,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the type property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         *
+         * @return possible object is
+         * {@link String }
          */
         public String getType() {
             return type;
@@ -2295,11 +2045,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the type property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link String }
          */
         public void setType(String value) {
             this.type = value;
@@ -2307,11 +2055,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the protocol property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         *
+         * @return possible object is
+         * {@link String }
          */
         public String getProtocol() {
             return protocol;
@@ -2319,11 +2065,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the protocol property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link String }
          */
         public void setProtocol(String value) {
             this.protocol = value;
@@ -2331,11 +2075,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the numservices property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Byte }
-         *     
+         *
+         * @return possible object is
+         * {@link Byte }
          */
         public Byte getNumservices() {
             return numservices;
@@ -2343,11 +2085,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the numservices property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Byte }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Byte }
          */
         public void setNumservices(Byte value) {
             this.numservices = value;
@@ -2355,11 +2095,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the services property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         *
+         * @return possible object is
+         * {@link String }
          */
         public String getServices() {
             return services;
@@ -2367,11 +2105,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the services property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link String }
          */
         public void setServices(String value) {
             this.services = value;
@@ -2382,9 +2118,9 @@ public class Nmaprun {
 
     /**
      * <p>Java class for anonymous complex type.
-     * 
+     *
      * <p>The following schema fragment specifies the expected content contained within this class.
-     * 
+     *
      * <pre>
      * &lt;complexType>
      *   &lt;simpleContent>
@@ -2394,12 +2130,10 @@ public class Nmaprun {
      *   &lt;/simpleContent>
      * &lt;/complexType>
      * </pre>
-     * 
-     * 
      */
     @XmlAccessorType(XmlAccessType.FIELD)
     @XmlType(name = "", propOrder = {
-        "value"
+            "value"
     })
     public static class Verbose {
 
@@ -2410,11 +2144,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the value property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link String }
-         *     
+         *
+         * @return possible object is
+         * {@link String }
          */
         public String getValue() {
             return value;
@@ -2422,11 +2154,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the value property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link String }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link String }
          */
         public void setValue(String value) {
             this.value = value;
@@ -2434,11 +2164,9 @@ public class Nmaprun {
 
         /**
          * Gets the value of the level property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link Byte }
-         *     
+         *
+         * @return possible object is
+         * {@link Byte }
          */
         public Byte getLevel() {
             return level;
@@ -2446,11 +2174,9 @@ public class Nmaprun {
 
         /**
          * Sets the value of the level property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link Byte }
-         *     
+         *
+         * @param value allowed object is
+         *              {@link Byte }
          */
         public void setLevel(Byte value) {
             this.level = value;

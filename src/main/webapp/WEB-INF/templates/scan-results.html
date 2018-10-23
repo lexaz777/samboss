@@ -7,16 +7,19 @@
     <table class="table-bordered table-hover">
         <thead>
         <tr>
-            <th th:text="Id">ID</th>
             <th th:text="port">port</th>
+            <th th:text="port_state">port state</th>
             <th th:text="service_name">service name</th>
+            <th th:text="service_product">service product</th>
             <th th:text="scan_id">scanId</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="port : ${portList}">
             <td th:text="${port.port}">port</td>
+            <td th:text="${port.portState}">port</td>
             <td th:text="${port.serviceName}">serviceName</td>
+            <td th:text="${port.serviceProduct}">serviceName</td>
             <td th:text="${port.scan.id}">scanId</td>
         </tr>
         </tbody>

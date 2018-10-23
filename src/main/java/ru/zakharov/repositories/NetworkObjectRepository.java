@@ -6,4 +6,5 @@ import ru.zakharov.entities.NetworkObject;
 
 @Repository
 public interface NetworkObjectRepository extends CrudRepository<NetworkObject, Long> {
+    NetworkObject findNetworkObjectByIpaddrEquals(String hostname);
 }

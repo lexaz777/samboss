@@ -9,6 +9,7 @@
             <thead>
             <tr>
                 <th th:text="id">ID</th>
+                <th th:text="ipaddr">ID</th>
                 <th th:text="hostname">HOSTNAME</th>
                 <th th:text="os_id">OS_ID</th>
             </tr>
@@ -16,6 +17,7 @@
             <tbody>
             <tr th:each="host : ${listHosts}">
                 <td th:text="${host.id}">hostId</td>
+                <td th:text="${host.ipaddr}">hostId</td>
                 <td th:text="${host.hostname}">hostname</td>
                 <td th:text="${host.osId}">os_id</td>
                 <td>

@@ -23,4 +23,9 @@ public class ScanService {
     public List<Scan> getAllScans() {
         return (List<Scan>) scanRepository.findAll();
     }
+
+    public void addScan(Scan scan) {
+        if (scan == null) return;
+        scanRepository.save(scan);
+    }
 }

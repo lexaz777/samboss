@@ -9,14 +9,14 @@
         <tr>
             <th th:text="scanId">ID</th>
             <th th:text="scandate">scan date</th>
-            <th th:text="netobjectid">net object id</th>
+            <th th:text="netobjectipaddr">net object id</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="scan : ${scanList}">
             <td th:text="${scan.id}">scanId</td>
             <td th:text="${scan.date}">scanDate</td>
-            <td th:text="${scan.networkObject.hostname}">network object name</td>
+            <td th:text="${scan.networkObject.ipaddr}">network object name</td>
             <td>
                 <a href="scan-results.html"
                    th:href="@{/port/list(id = ${scan.id})}">view</a>

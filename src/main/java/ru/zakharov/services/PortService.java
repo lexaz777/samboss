@@ -19,4 +19,8 @@ public class PortService {
     public List<Port> listAllPortsByScanId(Long scanId) {
         return portRepository.findAllPortsByScanId(scanId);
     }
+
+    public void addPortList(List<Port> portList) {
+        portRepository.saveAll(portList);
+    }
 }

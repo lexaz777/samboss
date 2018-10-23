@@ -1,7 +1,5 @@
 package ru.zakharov.entities;
 
-
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -13,6 +11,9 @@ public class NetworkObject {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "ipaddr")
+    private String ipaddr;
 
     @Column(name = "hostname")
     private String hostname;
@@ -32,6 +33,14 @@ public class NetworkObject {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getIpaddr() {
+        return ipaddr;
+    }
+
+    public void setIpaddr(String ipaddr) {
+        this.ipaddr = ipaddr;
     }
 
     public String getHostname() {
