@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MainController {
     @RequestMapping("/")
     public String shoeHomePage() {
-        return "hosts";
+        return "index";
+    }
+
+    @RequestMapping("favicon.png")
+    String appFavicon() {
+        return "forward:/resources/images/favicon.ico";
     }
 }

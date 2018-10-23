@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:include="layout :: htmlhead" th:with="title='Targets List'"></head>
 <body>
-<div th:replace="layout :: navbar">(navbar)</div>
+<div th:replace="layout :: navbar(Targets)">(navbar)</div>
 <div class="container">
     <div class="starter-template">
         <form class="form-row" th:action="@{/target/add}" th:object="${target}" method="post">

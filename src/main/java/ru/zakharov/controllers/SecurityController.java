@@ -9,5 +9,4 @@ public class SecurityController {
     public String showLoginPage() {
         return "login-page";
     }
-
 }

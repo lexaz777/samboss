@@ -1,4 +1,5 @@
 <html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:fragment="htmlhead">
     <meta charset="utf-8"></meta>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
@@ -14,9 +15,9 @@
 </head>
 
 <body>
-<div th:fragment="navbar">
+<div th:fragment="navbar(activeTab)">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="http://127.0.0.1:8080">
+        <a class="navbar-brand" th:href="@{/}">
             <img src="/images/samboss.png" width="30" height="30"
                                                class="d-inline-block align-top" alt="samboss.png">
             SamBoss
@@ -28,13 +29,13 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item" th:classappend="${activeTab == 'Hosts' ? 'active':''}">
                     <a class="nav-link" href="/host/list">Hosts<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" th:classappend="${activeTab == 'Scans' ? 'active':''}">
                     <a class="nav-link" href="/scan/list">Scans</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" th:classappend="${activeTab == 'Targets' ? 'active':''}">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Setting
@@ -46,6 +47,13 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
+                <div sec:authorize="isAuthenticated()">
+                    <li class="nav-item">
+                        <form th:action="@{/logout}" method="POST">
+                            <input type="submit" class="btn btn-danger" value="Logout"/>
+                        </form>
+                    </li>
+                </div>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

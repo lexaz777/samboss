@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+//@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private DataSource myDataSource;
 
@@ -30,8 +30,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/").hasAnyRole("USER")
-                .antMatchers("/targets/**").hasRole("ADMIN")
+                .antMatchers("/**").hasAnyRole("USER")
+                .antMatchers("/target/**").hasRole("ADMIN")
+                .antMatchers("/scansettings/**").hasRole("ADMIN")
                 .and()
                 .formLogin()
                 .loginPage("/login")
