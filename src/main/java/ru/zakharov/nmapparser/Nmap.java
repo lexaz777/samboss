@@ -51,7 +51,7 @@ public class Nmap {
     private List<Port> portList = new ArrayList<>();
     private Scan scan;
 
-    public void parse() {
+    public void parse(String fileName) {
         try {
 
             StringBuffer out = new StringBuffer();
@@ -66,7 +66,7 @@ public class Nmap {
             //Load and Parse the XML document
             //document contains the complete XML as a Tree.
             Document document =
-                    builder.parse("D:\\samboss\\scans\\2119376131.xml");
+                    builder.parse("D:\\samboss\\scans\\" + fileName);
             //document = builder.parse("E:\\wyse-wdm-result.xml");
 
 

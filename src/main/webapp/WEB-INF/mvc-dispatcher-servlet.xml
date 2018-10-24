@@ -105,6 +105,7 @@
     <task:annotation-driven/>
     <bean id="scheduler" class="ru.zakharov.sheduler.ScheduledTasks">
         <property name="nmap" ref="nmap"/>
+        <property name="fileTool" ref="fileTool"/>
     </bean>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
